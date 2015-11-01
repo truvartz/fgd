@@ -1,0 +1,138 @@
+/* Theme.css */
+/*     Full Game Down Html Css Theme     */
+/*         Truvartz Design Labs.         */
+/* Code: Akın Özgen; Design: Ümit Özgen; */
+/*#######################################*/
+
+/*
+	Notes: 
+		Red: #c4302b;
+		Black: #333333;
+		White: #dddddd;
+	End;
+*/
+
+/* Helpers */
+.clear     { display: block; clear: both; }
+.transition *, .transition *:focus, .transition *:hover, .transition *:active { transition: all .2s linear; -webkit-transition: all .2s linear; -moz-transition: all .2s linear; -ms-transition: all .2s linear; -o-transition: all .2s linear; }
+.last { margin: 0 !important; }
+
+/* Font Imports */
+@font-face { font-family: 'Gothic'; src: url(../Fonts/GOTHIC.TTF); }
+@font-face { font-family: 'Gothic'; src: url(../Fonts/GOTHICB.TTF); font-weight: bold; }
+@font-face { font-family: 'Gothic'; src: url(../Fonts/GOTHICI.TTF); font-style: italic; }
+@font-face { font-family: 'Gothic'; src: url(../Fonts/GOTHICBI.TTF); font-weight: bold; font-style: italic;	 }
+
+
+/* Reset Default Attributes */
+* { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none; text-indent: 0; font-style: normal; list-style-type: none; }
+
+body { background-image: url(../Images/background.png); }
+
+/* Index Classes */
+/* Header */
+header.top { background-color: #c4302b; font-family: 'Gothic'; color: #FFF; }
+header.top>.logo { padding: 4px 4px 4px 20px; max-width: 285px; float: left; }
+header.top>.menu { float: right; padding-top: 32.5px; font: 12px 'Gothic'; }
+header.top>.menu>.menu-ul>li 		{ display: block; float: left; margin-right: 24px; }
+header.top>.menu>.menu-ul>li>a 		{ padding: 12px 36px; background-color: #333; box-shadow: 0 0 18px rgba(0,0,0,0.2) inset; border-radius: 10px; color: #fff; }
+header.top>.menu>.menu-ul>li>a:hover{ background-color: #222; }
+
+/* Slider */
+aside.slider 		    { width: 100%; }
+aside.slider>.inner     { height: 170px; overflow: hidden; background-color: #c4302b; width: 90%; margin: 10px auto 0 auto; padding: 10px 15px; border: 1px solid #000; }
+aside.slider>.inner>img { display: block; max-width: 131px; max-height: 170px; float: left; margin-right: 11px; }
+aside.slider>.buttons   { width: 90%; margin: 10px auto 0 auto; padding: 10px 15px; text-align: center; }
+aside.slider>.buttons>button.slider-button:hover { box-shadow: 0 0 5px #D3413D; }
+aside.slider>.buttons>button.slider-button { cursor: pointer; width: 20px; height: 20px; background-color: #333; border-radius: 20px; }
+aside.slider>.buttons>button.active        { background-color: #c4302b; box-shadow: none; }
+aside.slider>.buttons>button.active:hover  { box-shadow: none; }
+
+/* Content */
+section.content-container { width: 92.3%; margin: 0 auto; }
+section.content-container>div.blog-content { width: 63%; float: left; }
+section.content-container>div.sidebar 	   { width: 37%; float: right; }
+
+/* Games */
+ul.games     						 { margin: 0; padding: 0; }
+ul.games>li 						 { width: 100% !important; margin-bottom: 30px; margin-bottom: 65px; }
+ul.games>li>div.inner 				 { width: 80%; margin-left: 15%; padding-bottom: 10px; background-color: #c4302b; border: 1px solid #000; }
+ul.games>li>div.inner>div.game-icon  { float: left; }
+/* Top Right Bottom Left */
+ul.games>li>div.inner>div.game-icon>img { margin: -35px 0 0 -38px; }
+ul.games>li>div.inner>div.game-banner{ margin: 22px 0 0 32px; float: left; }
+ul.games>li>div.inner>div.game-header{ font: 15px 'Gothic'; color: #fff; text-align: center; }
+ul.games>li>div.inner>div.game-text  { font: 14px 'Gothic'; color: #fff; padding: 22px; overflow: hidden; }
+	/* Subinfo */
+	ul.games>li>div.inner>ul.subinfo { display: block; width: 100%; color: #fff; font: 14px 'Gothic'; }
+	ul.games>li>div.inner>ul.subinfo>li { display: block; margin: 8px 12px 8px 12px; float: left; }
+	ul.games>li>div.inner>ul.subinfo>li>a.read-more { background-color: #333; border-radius: 8px; display: block; float: left; color: #fff; font: 13px 'Gothic'; padding: 10px; }
+	ul.games>li>div.inner>ul.subinfo>li>a.read-more:hover { background-color: #222; }
+
+/* Sidebar */
+div.sidebar>.inner { width: 76%; margin: 0 auto; }
+
+/* Sidebar Blocks */
+li.block { width: 100%; float: left; margin-bottom: 55px; }
+li.block>.header { cursor: move; margin-top: -21px; font: 16px 'Gothic'; color: #fff; text-align: center; padding: 10px 0; width: 65%; float: right; margin-right: 15px; background-color: #333; border-radius: 12px; }
+li.block>.inner  { background-color: #c4302b; border: 1px solid #333; padding: 12px; padding-top: 30px; font: 16px 'Gothic'; color: #fff; }
+
+
+/* Footer */
+footer { background-color: #c4302b; padding: 5px 10px; margin-top: 22px; }
+footer>.logo     { float: left; width: 20% }
+footer>.logo>img { max-height: 60px; }
+footer>center				{ float: left; display: block; width: 65%; }
+footer>center>.button-black { width: 250px; margin-top: 14px; }
+footer>.right-icons  		{ float: right; width: 15%; padding-top: 15px; }
+footer>.right-icons>img  	{ max-width: 38px; }
+
+/* Buttons */
+div.social-buttons>a>img { max-width: 54px; margin-right: 2px; } /* Social Buttons */
+a.button-black, button.button-black { display: block; font: 16px 'Gothic'; color: #fff; text-align: center; width: 100%; padding: 10px 0; background-color: #333; border-radius: 12px; }
+/* Index Classes End */
+
+
+
+
+/* Inner Page Classes */
+div.game-content 				 { width: 95%; margin-left: 5%; padding-bottom: 10px; background-color: #c4302b; border: 1px solid #000; }
+div.game-content>div.game-icon  { float: left; }
+/* Top Right Bottom Left */
+div.game-content>div.game-icon>img { margin: -35px 0 0 -38px; }
+div.game-content>div.game-banner{ margin: 22px 0 0 32px; float: left; }
+div.game-content>div.game-header{ font: 15px 'Gothic'; color: #fff; text-align: center; }
+div.game-content>div.game-text  { font: 14px 'Gothic'; color: #fff; text-align: justify; padding: 22px 70px; overflow: hidden; }
+/* Subinfo */
+div.game-content>ul.subinfo { display: block; width: 95%; margin-left: 22%; color: #fff; font: 14px 'Gothic'; }
+div.game-content>ul.subinfo>li { display: block; margin: 8px 12px 8px 12px; float: left; }
+div.game-content>ul.subinfo>li>a.read-more { background-color: #333; border-radius: 8px; display: block; float: left; color: #fff; font: 13px 'Gothic'; padding: 10px; }
+div.game-content>ul.subinfo>li>a.read-more:hover { background-color: #222; }
+/* External Info */
+div.external-info { padding: 0 70px; }
+div.external-info>div.info { margin-bottom: 18px; color: white; font: 14px 'Gothic'; }
+div.external-info>div.info>div.header { float: left; width: 100%; }
+div.external-info>div.info>div.inner { text-align: justify; float: left; width: 100%; }
+/* Album */
+div.album>ul.album>li>img { width: 99.4%; overflow: hidden; border: 1px solid #272822; }
+div.album>div.album-buttons 	   { width: 120px; float: right; }
+div.album>div.album-buttons>button { background-color: transparent; color: #333; cursor: pointer; font: 20px 'Gothic'; margin-left: 15px }
+/* Video */
+div.video>img { width: 99.4%; border: 1px solid #333; }
+/* Download Area */
+div.download-area { width: 40%; margin: 0 auto; }
+div.download-area>div.row { width: 100%; float: left; }
+div.download-area>div.row>div.code { width: 43%; padding: 7px 1%; color: #fff; font: 18px 'Gothic'; text-align: center; background-color: #333; margin: 1%; float: left; }
+div.download-area>div.row>div.code>input { width: 100%; display: block; padding: 1%; }
+div.download-area>div.row>div.code>button { width: 100%; }
+/* Inner Page Classes End */
+
+
+
+
+/* Icon Classes */
+.icon { width: 22px; height: 22px; margin-right: 8px; display: block; float: left; background-repeat: no-repeat; background-image: url(../Images/icon-map.png); }
+.icon-user { background-position: 0 0; }
+.icon-comment { background-position: 0 -22px; }
+.icon-eye { background-position: 0 -44px; }
+.icon-calender { background-position: 0 -66px; }
